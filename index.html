@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor Español-Inglés Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 Traductor Profesional</h1>
+            <p class="subtitle">Español → Inglés Formal y Elegante</p>
+        </header>
+
+        <main>
+            <div class="translation-area">
+                <div class="input-section">
+                    <label for="spanish-input">
+                        <span class="label-text">Texto en Español</span>
+                        <span class="char-count" id="input-count">0 caracteres</span>
+                    </label>
+                    <textarea 
+                        id="spanish-input" 
+                        placeholder="Escribe o pega tu texto en español aquí..."
+                        rows="10"
+                    ></textarea>
+                </div>
+
+                <div class="controls">
+                    <button id="translate-btn" class="btn-translate">
+                        <span class="btn-icon">🔄</span>
+                        Traducir
+                    </button>
+                    <button id="clear-btn" class="btn-clear">
+                        <span class="btn-icon">🗑️</span>
+                        Limpiar
+                    </button>
+                </div>
+
+                <div class="output-section">
+                    <label for="english-output">
+                        <span class="label-text">Traducción en Inglés</span>
+                        <button id="copy-btn" class="btn-copy" style="display: none;">
+                            <span class="btn-icon">📋</span>
+                            Copiar
+                        </button>
+                    </label>
+                    <div id="loading" class="loading" style="display: none;">
+                        <div class="spinner"></div>
+                        <p>Traduciendo...</p>
+                    </div>
+                    <textarea 
+                        id="english-output" 
+                        placeholder="La traducción aparecerá aquí..."
+                        rows="10"
+                        readonly
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>✨ Características</h3>
+                <ul>
+                    <li>Traducción formal y elegante</li>
+                    <li>Uso de sinónimos apropiados</li>
+                    <li>Lenguaje natural y profesional</li>
+                    <li>Interfaz simple e intuitiva</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>Better English Translation © 2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
